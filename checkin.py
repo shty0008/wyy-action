@@ -85,14 +85,14 @@ for x in object['recommend']:
         data2["json"]["end"]="playend"
         data2["json"]["id"]=j["id"]
         data2["json"]["sourceId"]=""
-        data2["json"]["time"]="250"
+        data2["json"]["time"]="240"
         data2["json"]["type"]="song"
         data2["json"]["wifi"]=0
         buffer.append(data2)
         count+=1
-        if count>298:
+        if count>=310:
             break
-    if count>=298:
+    if count>=310:
         break
 url = "http://music.163.com/weapi/feedback/weblog"
 postdata={
